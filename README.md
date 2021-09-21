@@ -5,3 +5,4 @@ Neste projeto, fui desafiada a reconstruir a página de login do Instagram utili
 Este é um projeto simples e responsivo feito em HTML e CSS.
 
 # Resultado final
+![Resultado Final](img\resultado-final.png)
