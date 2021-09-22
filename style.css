@@ -1,10 +1,9 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* { /* Formatação inicial da página, tipo um reset */
+    padding: 0; /* Espaçamento aplicado dentro do elemento */
+    margin: 0; /* Espaçamento aplicado fora do elemento */
+    box-sizing: border-box; /* Influencia o cálculo do tamanho do elemento. Garante que o elemento terá o tamanho exato que definimost */
     text-decoration: none;
-    font-family: sans-serif;
-    font-size: 14px;
+    font: 14px sans-serif;
 }
 
 body {
@@ -24,7 +23,7 @@ body {
     display: flex;
     align-items: center; /* alinhamento vertical */
     justify-content: start; /* alinhamento horizontal */
-    width: 60%;
+    width: 60%; /* Ocupa 60% do site */
     height: 100vh;
 }
 
@@ -32,7 +31,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 50%; /* Ocupa 50% do instagram-wrapper */
 }
 
 .instagram-phone img {
@@ -44,7 +43,7 @@ body {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    width: 50%;
+    width: 50%; /* Ocupa 50% do instagram-wrapper */
     min-height: 34rem;
 }
 
@@ -54,12 +53,12 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: #ffffff;
-    width: 100%;
-    padding: 1.3rem 0;
+    width: 100%; /* width + padding + border = tamanho total do elemento*/
+    padding: 1.3rem 0; /* eixo x, eixo y*/
     border: 1px solid lightgrey;
 }
 
-.group:nth-child(1){ /*grupo 1 (logo, perfil, sign in, sign out)*/
+.group:nth-child(1){ /* Seleciona o elemento 1 de um mesmo grupo */
     min-height: 19rem;
 }
 
@@ -133,7 +132,7 @@ body {
 
 /* media queries */
 
-@media (max-width: 1024px) { /* tablet */
+@media (max-width: 1024px) { /* desktop/notebook */
     .instragram-wrapper {
         width: 90%;
     }
@@ -148,7 +147,7 @@ body {
         width: 90%;
     }
 
-    .group {
+    .group { 
         border: 1px solid transparent;
         
     }
